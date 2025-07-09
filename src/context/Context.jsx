@@ -19,9 +19,11 @@ export const ContextProvider = (props) => {
         console.log(val);
         if (val.status === 'OK') {
           setData(val.result[0]);
+          setUsername('')
         } else {
           setError(val.comment);
           setData(null);
+          setUsername('')
         }
       } catch (e) {
         setError('Error occurred while fetching');
