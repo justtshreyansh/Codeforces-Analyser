@@ -1,0 +1,54 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;  /* <-- space between Home and Contest */
+  align-items: center;
+  background-color: #374151; /* Dark slate background */
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Wrapper for the links on left and right side */
+.navbar-left,
+.navbar-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-link {
+  color: #ffffff; /* White text */
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.nav-link:hover {
+  background-color: #4b5563; /* Lighter gray on hover */
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-left,
+  .navbar-right {
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 5px 0;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+  }
+}

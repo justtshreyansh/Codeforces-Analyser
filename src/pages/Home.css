@@ -1,0 +1,32 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;    
+  gap: 40px;                  
+  padding: 30px;
+  max-width: 1100px;
+  margin: 0 auto;             
+  flex-wrap: wrap;             
+}
+
+/* Form and Profile take equal width on desktop */
+.form-wrapper,
+.profile-wrapper {
+  flex: 1 1 400px; /* flex-grow:1, flex-shrink:1, flex-basis:400px */
+  min-width: 300px; /* Prevent getting too small */
+}
+
+/* On smaller screens, stack vertically */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+  }
+
+  .form-wrapper,
+  .profile-wrapper {
+    flex-basis: auto;
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.past-contest {
+  width: 100%;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.past-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem; /* Bigger */
+  font-weight: 700;
+  color: #04d6ac; /* orange */
+  margin-bottom: 2rem;
+  text-align: left;
+  letter-spacing: 1.2px;
+  text-shadow: 1px 1px 2px rgba(255, 102, 0, 0.4);
+}
+
+.contest-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.contest-card {
+  flex: 1 1 320px;
+  max-width: 320px;
+  background: #fff8f0;
+  border-radius: 14px;
+  padding: 1.8rem 2rem;
+  box-shadow: 0 6px 18px rgba(255, 102, 0, 0.15);
+  border: 1.5px solid #ff9933;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contest-card:hover {
+  box-shadow: 0 10px 30px rgba(255, 102, 0, 0.3);
+  border-color: #ff6600;
+}
+
+.contest-name-link {
+  font-family: 'Dancing Script', cursive !important;
+  font-size: 1.5rem !important; /* smaller */
+  font-weight: 900 !important;
+  letter-spacing: 1.2px !important;
+  color: #FF6600 !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  margin-bottom: 0.6rem;
+}
+
+.contest-name-link:hover {
+  text-decoration: underline !important;
+  color: #cc5200 !important;
+}
+
+.contest-start-time,
+.contest-duration {
+  font-size: 1.1rem;
+  color: #804000;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.no-contest {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #996633;
+  margin-top: 1rem;
+}

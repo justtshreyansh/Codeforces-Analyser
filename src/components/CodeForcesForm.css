@@ -1,0 +1,49 @@
+.form-container {
+  width: 400px;
+  min-height: 450px;
+  background-color: #e9f0fb !important; /* ✅ Matches profile card */
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  padding: 35px 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-input {
+  font-size: 1.2rem;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 2px solid #0077ff;
+  outline: none;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+}
+
+.form-input:focus {
+  border-color: #005fcc;
+}
+
+.form-button {
+  background-color: #0077ff;
+  color: white;
+  padding: 14px 0;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #005fcc;
+}

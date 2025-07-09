@@ -1,0 +1,66 @@
+.profile-container {
+  width: 400px;
+  min-height: 450px;
+  background-color: #e9f0fb; /* ✅ Gentle light blue */
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  padding: 35px 30px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-title {
+  font-family: 'Brush Script MT', cursive, sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #0077ff;
+}
+
+.profile-info {
+  font-size: 1.1rem;
+  margin: 6px 0;
+  color: #333;
+}
+
+.profile-avatar {
+  margin-top: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 12px rgba(0, 119, 255, 0.4);
+}
+
+.profile-message,
+.profile-error {
+
+  font-size: 1.2rem;
+  color: #555e7e; /* Soft navy gray-blue */
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.profile-error {
+  color: #e74c3c;
+}
+
+
+.profile-link {
+  color: #2563eb; /* Blue color */
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile-link:hover {
+  text-decoration: underline;
+  color: #1e40af; /* Darker blue on hover */
+}
