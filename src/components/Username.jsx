@@ -23,6 +23,7 @@ const Username = () => {
     setError('');
     setLoading(true);
     setSearchUsername(username);
+    setUsername('');
   }
 
   return (
