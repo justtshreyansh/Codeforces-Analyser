@@ -51,7 +51,7 @@ const Profile = () => {
 
       {data.rank && (
         <p className="profile-info">
-          <strong>Rank:</strong> {data.rank}
+          <strong>Current Rank:</strong> {data.rank}
         </p>
       )}
 
@@ -63,7 +63,7 @@ const Profile = () => {
 
       {data.rating !== undefined && (
         <p className="profile-info">
-          <strong>Rating:</strong> {data.rating}
+          <strong>Current Rating:</strong> {data.rating}
         </p>
       )}
 
